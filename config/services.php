@@ -1,8 +1,8 @@
 <?php
 return [
-    'github' => [
-        'client_id' => env('GITHUB_KEY'),
-        'client_secret' => env('GITHUB_SECRET'),
-        'redirect' => env('GITHUB_REDIRECT_URI'),
+    'linkedin' => [
+        'client_id' => env('LINKEDIN_KEY'),
+        'client_secret' => env('LINKEDIN_SECRET'),
+        'redirect' => env('LINKEDIN_REDIRECT_URI'),
     ]
 ];
