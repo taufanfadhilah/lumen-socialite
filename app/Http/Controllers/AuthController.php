@@ -25,7 +25,7 @@ class AuthController extends Controller
 
     public function redirectToProvider()
     {
-        return Socialite::driver('github')->stateless()->redirect();
+        return Socialite::driver('facebook')->stateless()->redirect();
     }
 
     /**
@@ -35,7 +35,7 @@ class AuthController extends Controller
      */
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('github')->stateless()->user();
+        $user = Socialite::driver('facebook')->stateless()->user();
 
         // $user->token;
 
