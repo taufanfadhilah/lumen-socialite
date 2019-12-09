@@ -95,7 +95,9 @@ $app->singleton(
 
 $app->configure('services');
 $app->register(SocialiteProviders\Manager\ServiceProvider::class);
-
+$app->middleware([
+    App\Http\Middleware\CorsMiddleware::class
+ ]);
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
 ], function ($router) {
